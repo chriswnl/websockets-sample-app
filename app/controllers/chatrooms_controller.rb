@@ -2,6 +2,7 @@ class ChatroomsController < ApplicationController
   before_action :set_chatroom, only: [:show, :edit, :update, :delete]
 
   def index
+    #session["current_user"] = nil
     @chatrooms = Chatroom.all
   end
 
@@ -20,7 +21,7 @@ class ChatroomsController < ApplicationController
   end
 
   def show
-    @message = Message.new
+    @message = current_user.messages.build
   end
 
   def edit

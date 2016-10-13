@@ -1,4 +1,5 @@
 <%= form_for @chatroom do |f| %>
   <%= f.text_field :topic %>
+  <%= f.hidden_field :chatroom_id, value: @chatroom.id%>
   <%= f.submit class: "btn btn-primary" %>
 <% end %>

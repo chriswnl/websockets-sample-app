@@ -1,6 +1,6 @@
 <div class="row col-md-8 col-md-offset-2">
   <h1><%= @chatroom.topic %></h1>
-
+  <p>Signed in as: <%= current_user.name %></p>
 <div class="panel panel-default" style="height:200px;">
   <% if @chatroom.messages.any? %>
     <div class="panel-body" id="messages" style="height:100%;overflow:auto;">
