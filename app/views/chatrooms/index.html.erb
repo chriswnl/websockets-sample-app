@@ -1,0 +1,26 @@
+<h1>Chatrooms</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Topic</th>    
+      <th>Slug</th>    
+      <th></th>    
+    </tr>  
+  </thead>
+  
+  <tbody>
+    <% @chatrooms.each do |chatroom| %>
+      <tr>
+        <td><%= chatroom.topic %></td>
+        <td><%= chatroom.slug %></td>
+        <td>
+          <%= link_to "Join", chatroom_path(chatroom.slug) %> |        
+          <%= link_to "Edit", edit_chatroom_path(chatroom.slug) %> |        
+          <%= link_to "Delete", chatroom_path(chatroom.slug), data: {confirm: "Are you sure?"} %>        
+        </td>
+      </tr>
+    <% end %>  
+  </tbody>
+  
+</table>
