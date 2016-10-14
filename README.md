@@ -1,9 +1,9 @@
-# Cabletest1
+# Websockets/ActionCable demo app
 
-My sample app for using ActionCable and websockets with Redis to keep a connection open.
+My sample app, 'cabletest1', for using ActionCable and websockets with Redis to keep a connection open.
 
 This app is the chatoom app from a [heroku blog](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable) post
-with a coupke of minor modifications.
+with a couple of minor modifications.
 
 # Have a go
 
