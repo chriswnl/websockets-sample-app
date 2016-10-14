@@ -5,7 +5,7 @@ My sample app, 'cabletest1', for using ActionCable and websockets with Redis to 
 This app is the chatoom app from a [heroku blog](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable) post
 with a couple of minor modifications.
 
-# Have a go
+## Have a go
 
 Clone it.
 ```
