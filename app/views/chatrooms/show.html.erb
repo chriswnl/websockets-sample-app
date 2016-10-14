@@ -1,9 +1,9 @@
 <div class="row col-md-8 col-md-offset-2">
   <h1><%= @chatroom.topic %></h1>
   <p>Signed in as: <%= current_user.name %></p>
-<div class="panel panel-default" style="height:200px;">
+<div class="panel panel-default">
   <% if @chatroom.messages.any? %>
-    <div class="panel-body" id="messages" style="height:100%;overflow:auto;">
+    <div class="panel-body" id="messages">
       <%= render partial: 'messages/message', collection: @chatroom.messages%>
     </div>
   <%else%>
@@ -11,6 +11,6 @@
     </div>
   <%end%>
 </div>
-
   <%= render partial: 'messages/message_form', locals: {message: @message, chatroom: @chatroom}%>
 </div>
+
